@@ -15,12 +15,15 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-text
-        value="This content will always face you."
+    <a-assets>
+    <img id="test" src="test.jpg">
+  </a-assets>
+
+      <a-image src="test" width="12" height="30"
         rotation="0 180 0"
         scale="100 100 100"
         gps-entity-place="latitude: 37.982360; longitude: -84.413304;"
-      ></a-text>
+      ></a-image>
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
