@@ -1,15 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
-    </head>
-<<<<<<< HEAD
-    <body>
-      <a rel="ar" href="./assets/appletest.reality">
-          <img src="/assets/test1.jpg">
-      </a>
-    </body>
+  <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-assets>
+    <img id="test" src="./assets/test1.jpg">
+  </a-assets>
+      <a-marker-camera preset='custom' type='pattern' url='./assets/marker.patt'>
+      <a-plane src="#test" scale="4 10 4" ></a-plane>
+      </a-marker-camera>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
 </html>
