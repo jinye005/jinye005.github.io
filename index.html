@@ -11,40 +11,5 @@
       <a rel="ar" href="./assets/appletest.reality">
           <img src="/assets/test1.jpg">
       </a>
-=======
-
-    <body style="margin: 0; overflow: hidden;">
-        <a-scene
-            vr-mode-ui="enabled: false;"
-            loading-screen="enabled: false;"
-            arjs="trackingMethod: best; sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: true;"
-            id="scene"
-            embedded
-            gesture-detector
-        >
-            <a-marker
-                id="animated-marker"
-                type="pattern"
-                preset="custom"
-                url="assets/marker.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                smooth="true"
-
-                id="markerA"
-            >
-                <a-image
-                    src="./assets/test1.jpg"
-                    scale="6 15 6 "
-                    class="clickable"
-                    rotation="-90 0 0"
-                    gesture-handler
-                ></a-image>
-            </a-marker>
-
-            <a-entity camera></a-entity>
-        </a-scene>
->>>>>>> 6bb97bcc0928e3071f08a8f92f4ce1a447ec270b
     </body>
 </html>
