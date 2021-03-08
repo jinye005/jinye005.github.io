@@ -8,9 +8,10 @@
 
 <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
 
-<img id="myImage" src="./assets/Instruction1.png" style="width:1000px">
-
-<button onclick="document.getElementById('myImage').src='./assets/Instruction2.jpg'">Next</button>
+<div id="overlay1">
+  <img id="instructionImg1" src="./assets/Instruction1.png" style="width:1000px">
+  <button class="btn next" onclick="document.getElementById('instructionImg1').src='./assets/Instruction2.jpg'">Next</button>
+</div>
 
 </body>
 </html>
